@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!--BOXICONS-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--SWIPER CSS-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <title>I SIMULATION</title>
+
+</head>
+
+<body>
+
+    <!--HEADER-->
+    <header class="header">
+        <nav class="nav bd-container">
+
+            <!--LOGO-->
+            <a href="#zero" class="nav__logo">I SIMULATION</a>
+
+            <!--NAV BAR-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#zero" class="nav__link">Main</a></li>
+                    <li class="nav__item"><a href="#one" class="nav__link">Blue</a></li>
+                    <li class="nav__item"><a href="#two" class="nav__link">Red</a></li>
+                </ul>
+            </div>
+
+            <!--SMALL NAV BAR-->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--MAIN-->
+    <main class="main">
+        <div class="swiper-container gallery-top">
+            <div class="swiper-wrapper">
+
+                <!--PILL ZERO-->
+                <section class="pills swiper-slide" id="zero">
+                    <img src="/assets/img/mehrab-sium.jpg" alt="" class="pills__bg">
+
+                    <div class="pills__container bd-container">
+                        <div class="pills__data">
+                            <h2 class="pills__subtitle">After this,</h2>
+                            <h1 class="pills__title"></h1>
+                            <p class="pills__description">There's no turning back.</p>
+                            <a href="" class="pills__button">Continue <i class='bx bx-right-arrow-alt'
+                                    id="pills__button-icon"></i></a>
+                        </div>
+
+                        <!-- <div class="pills__video">
+                            <div class="pills__video-content">
+                                <i class='bx bx-play-circle pills__video-icon'></i>
+                            </div>
+                        </div> -->
+                    </div>
+                </section>
+
+                <!--PILL ONE-->
+                <section class="pills swiper-slide" id="one">
+                    <img src="/assets/img/pawel-czerwinski.jpg" alt="" class="pills__bg">
+
+                    <div class="pills__container bd-container">
+                        <div class="pills__data">
+                            <h2 class="pills__subtitle">You take the blue pill,</h2>
+                            <h1 class="pills__title"></h1>
+                            <p class="pills__description">The story ends, you wake up in your bed and believe whatever you want to believe.</p>
+                            <a href="" class="pills__button">Blue <i class='bx bx-right-arrow-alt'
+                                    id="pills__button-icon"></i></a>
+                        </div>
+
+                        <!-- <div class="pills__video">
+                            <div class="pills__video-content">
+                                <i class='bx bx-play-circle pills__video-icon'></i>
+                            </div>
+                        </div> -->
+                    </div>
+                </section>
+
+                <!--PILL TWO-->
+                <section class="pills swiper-slide" id="two">
+                    <img src="/assets/img/solen-feyissa.jpg" alt="" class="pills__bg">
+
+                    <div class="pills__container bd-container">
+                        <div class="pills__data">
+                            <h2 class="pills__subtitle">You take the red pill,</h2>
+                            <h1 class="pills__title"></h1>
+                            <p class="pills__description">You stay in wonderland, and will be shown how deep the rabbit hole goes.</p>
+                            <a href="" class="pills__button">Red <i class='bx bx-right-arrow-alt'
+                                    id="pills__button-icon"></i></a>
+                        </div>
+
+                        <!-- <div class="pills__video">
+                            <div class="pills__video-content">
+                                 <i class='bx bx-play-circle pills__video-icon'></i> 
+                            </div>
+                        </div> -->
+                    </div>
+                </section>
+
+                <!--PILL POPUP-->
+                <div class="pills__popup" id="popup">
+                    <div>
+                        <div class="pills__popup-close" id="popup-close">
+                            <i class='bx bx-x'></i>
+                        </div>
+
+                        <iframe class="pills__popup-video" src="https://www.youtube.com/embed/gDadfh0ZdBM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--CONTROLS-->
+        <div class="controls gallery-thumbs">
+            <div class="controls__container swiper-wrapper">
+                <img src="/assets/img/mehrab-sium.jpg" class="controls__img swiper-slide" alt="">
+                <img src="/assets/img/pawel-czerwinski.jpg" class="controls__img swiper-slide" alt="">
+                <img src="/assets/img/solen-feyissa.jpg" class="controls__img swiper-slide" alt="">
+            </div>
+        </div>
+    </main>
+
+    <!--GSAP-->
+    <script src="/assets/js/gsap.min.js"></script>
+
+    <!--MAIN JS-->
+    <script src="assets/js/main.js"></script>
+
+    <!--SWIPER JS-->
+    <script src="/assets/js/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>
